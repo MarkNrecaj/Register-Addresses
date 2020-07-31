@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{80A7C696-7080-4C49-BBE1-D3B6F9EA101F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Forma</RootNamespace>
+    <AssemblyName>Forma</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\bunifu\[FTUApps.com] - Bunifu UI WinForms v1.11.5.21 + Dataviz Advanced v1.1.1.5 + Activator\Bunifu UI WinForms 1.11.5.21\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.17.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB.cs" />
+    <Compile Include="Chat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat.Designer.cs">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Qytetaret_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Qytetaret_Admin.Designer.cs">
+      <DependentUpon>Qytetaret_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Qytetaret_pun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Qytetaret_pun.Designer.cs">
+      <DependentUpon>Qytetaret_pun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shto_addresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shto_addresa.Designer.cs">
+      <DependentUpon>Shto_addresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShikoAdresat_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShikoAdresat_User.Designer.cs">
+      <DependentUpon>ShikoAdresat_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Puntori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Puntori.Designer.cs">
+      <DependentUpon>Main_Puntori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendbanimet_adm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendbanimet_adm.Designer.cs">
+      <DependentUpon>Vendbanimet_adm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Qytetet_adm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Qytetet_adm1.Designer.cs">
+      <DependentUpon>Qytetet_adm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shto_Vendbanimet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shto_Vendbanimet.Designer.cs">
+      <DependentUpon>Shto_Vendbanimet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shto_Qytet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shto_Qytet.Designer.cs">
+      <DependentUpon>Shto_Qytet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shto_punetor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shto_punetor.Designer.cs">
+      <DependentUpon>Shto_punetor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_admin.Designer.cs">
+      <DependentUpon>Main_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Puntoret_adm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puntoret_adm.Designer.cs">
+      <DependentUpon>Puntoret_adm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Chat.resx">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Puntori.resx">
+      <DependentUpon>Main_Puntori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Qytetaret_Admin.resx">
+      <DependentUpon>Qytetaret_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Qytetaret_pun.resx">
+      <DependentUpon>Qytetaret_pun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShikoAdresat_User.resx">
+      <DependentUpon>ShikoAdresat_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shto_addresa.resx">
+      <DependentUpon>Shto_addresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendbanimet_adm.resx">
+      <DependentUpon>Vendbanimet_adm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Qytetet_adm1.resx">
+      <DependentUpon>Qytetet_adm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shto_Qytet.resx">
+      <DependentUpon>Shto_Qytet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shto_punetor.resx">
+      <DependentUpon>Shto_punetor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_admin.resx">
+      <DependentUpon>Main_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Puntoret_adm.resx">
+      <DependentUpon>Puntoret_adm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Shto_Vendbanimet.resx">
+      <DependentUpon>Shto_Vendbanimet.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
